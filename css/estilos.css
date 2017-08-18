@@ -1,0 +1,14 @@
+.login{
+	padding-top: 7em;
+}
+.panel-heading{
+	background-color: #3382F8 !important;
+}
+.btn:hover{
+	background-color: #1F1F1F;
+	border-color: #1f1f1f;
+	color: white;
+}
+.panel{
+	box-shadow: 5px 5px 5px 5px;
+}
