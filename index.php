@@ -6,8 +6,9 @@
                 <title>
                     Iniciar Sesión
                 </title>
-                <link href="css/bootstrap.min.css" rel="stylesheet">
-                    <link href="css/materialice.min.css" rel="stylesheet">
+                
+                    <link href="css/materialize.min.css" rel="stylesheet">
+                    <link href="css/bootstrap.min.css" rel="stylesheet">
                     </link>
                 </link>
                 <link href="css/estilos.css" rel="stylesheet">
@@ -37,15 +38,14 @@
                         		<div class="col-md-3"><h4>Contraseña:</h4></div>
                         		<div class="col-md-9"><input type="password" name="clave" id="clave" class="form-control" /></div>
                         	</div>
-                        </div>
-                        <div class="panel-footer">
-                        <div class="row">
-                        	<div class="col-md-4"><button type="button" class="form-control btn btn-primary">Ingresar</button></div>
-                        	<div class="col-md-4"><button type="reset" class="form-control btn btn-danger">Cancelar</button></div>
-                        	<div class="col-md-4"><button type="button" class="form-control btn btn-success">Registrarse</button></div>
+                        	<div class="row">
+                        	<div class="col-md-6"><button type="button" class="form-control btn btn-primary" onclick="validar()"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Ingresar</button></div>
+                        	<div class="col-md-6"><button type="reset" class="form-control btn btn-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancelar</button></div>
+                        	
                         
                     </div>
-                </div>
+                        </div>
+                        
                 <div class="col-md-3">
                 </div>
             </div>
@@ -56,7 +56,12 @@
         </script>
         <script src="js/bootstrap.min.js">
         </script>
-        <script src="js/materialice.min.js">
+        <script src="js/materialize.min.js">
+        </script>
+        <script>
+        	function validar(){
+        		location.href='home.php'
+        	}
         </script>
     </body>
 </html>

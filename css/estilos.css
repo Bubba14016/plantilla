@@ -1,14 +1,40 @@
+body{
+	background-color: black;
+}
 .login{
 	padding-top: 7em;
 }
 .panel-heading{
-	background-color: #3382F8 !important;
+	background-color: #0097a7 !important;
+	color: white !important;
 }
-.btn:hover{
-	background-color: #1F1F1F;
-	border-color: #1f1f1f;
-	color: white;
-}
+
 .panel{
 	box-shadow: 5px 5px 5px 5px;
+}
+
+.btn-primary{
+	background-color: #0097a7 !important;
+	color: white !important;
+}
+.btn:hover{
+	background-color: #1F1F1F !important;
+	border-color: #1f1f1f !important;
+	color: white !important;
+}
+.panel-body{
+	background-color: black;
+	color: white;
+}
+a{
+	text-decoration-line: none !important;
+}
+a:hover{
+	color:white;
+}
+nav{
+	background-color: #0097a7 !important;
+}
+.modal{
+	opacity: 0 ; 
 }
