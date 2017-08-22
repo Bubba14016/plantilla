@@ -129,7 +129,7 @@
         </nav>
 
         <div class="col s12" id="test1">
-           <h1>Registrar</h1>
+           
            <?php include('registrar_af.php');?>
         </div>
         <div class="col s12" id="test2">
@@ -151,9 +151,9 @@
         <script crossorigin="a
 	nonymous" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" src="https://code.jquery.com/jquery-2.2.4.min.js">
         </script>
-        <script src="../js/bootstrap.min.js">
+        <script src="../js/bootstrap.js">
         </script>
-        <script src="../js/materialize.min.js">
+        <script src="../js/materialize.js">
         </script>
         <script>
   
@@ -170,8 +170,20 @@
      
     }
   );
+     $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    dateFormat: 'dd-mm-yyyy',
+     max: new Date(),
+    closeOnSelect: true // Close upon selecting a date,
   });
- 
+  });
+ 		
+ 	
+
   </script>
 </body>
 </html>

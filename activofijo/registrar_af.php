@@ -1,23 +1,103 @@
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="panel">
-	<div class="panel-heading">Registro de Activo Fijo</div>
-	<div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="container-fluid">
+    <div class="row">
+    <div class="col-md-8">
+    <div class="row">
+        	<div class="panel">
+        		<div class="panel-body">
+        			<div class="row">
+        				<div class="input-field col-md-6"><label for="responsable">Nombre del responsable</label><input type="text" id="responsable" name="responsable"></div>
+        				<div class="input-field col-md-6"><label for="ubicacion">Departamento</label><input type="text" id="ubicacion" name="ubicacion"></div>
+        			</div>
+        		</div>
+        	</div>
+		</div>
+        
+    <div class="row">
+        
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3>Registro de Activo Fijo</h3>
+                </div>
+                <div class="panel-body" id="formulario">
+                    <div class="row">
+                        <div class="col-md-2">
+                            Cantidad
+                        </div>
+                        <div class="col-md-6">
+                            Descripcion del Activo Fijo
+                        </div>
+                        <div class="col-md-2">
+                            Codigo
+                        </div>
+                        <div class="col-md-2">
+                            No. de Serie
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <input class="form-control activo" type="text"/>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control activo" type="text"/>
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control activo" type="text"/>
+                        </div>
+                        <div class="col-md-2">
+                            <input class="form-control activo" type="text"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer text-right">
+                    <button class="btn btn-default btn-lg " type="button" onclick="addFila()">
+                        <span aria-hidden="true" class="glyphicon glyphicon-plus">
+                        </span>
+                        
+                    </button>
+                </div>
+            </div>
+          
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="row">
+        	<div class="panel">
+        		<div class="panel-heading">Ficha No.</div>
+        		<div class="panel-body"><input type="text" class="activo"></div>
+        	</div>
+        </div>
 
+        <div class="row">
+        	<div class="panel">
+        		<div class="panel-heading">Fecha</div>
+        		<div class="panel-body"><input type="date" class="datepicker activo"></div>
+        	</div>
+        </div>
+        <div class="row">
+        	<div class="panel">
+        		<div class="panel-heading">Origen</div>
+        		<div class="panel-body">
+        		<input type="radio" id="origen1" class="with-gap"  name="origen">
+        		<label for="origen1">Prestado</label><br>
+        		<input type="radio" id="origen2" class="with-gap"  name="origen">
+        		<label for="origen2">Comprado</label><br>
+        		<input type="radio" id="origen3" class=" with-gap"  name="origen">
+        		<label for="origen3">Donado</label><br>
+        		<input type="radio" id="origen4" class="with-gap"  name="origen">
+        		<label for="origen4">Robado</label>
+        		
+        		</div>
+        	</div>
+        </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
 
-
-
-
-
-
-  
+<script>
+		function addFila(){
+			var script=document.createElement("div");
+ 			script.innerHTML="<div class='row'><div class='col-md-2'><input class='form-control activo' type='text'/></div><div class='col-md-6'><input class='form-control activo' type='text'/></div><div class='col-md-2'><input class='form-control activo' type='text'/></div><div class='col-md-2'><input class='form-control activo' type='text'/></div></div>";
+ 			var fila=document.getElementById("formulario");
+ 			fila.appendChild(script);
+ 		}
+</script>

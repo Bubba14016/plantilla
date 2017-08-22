@@ -11,6 +11,8 @@ body{
 
 .panel{
 	box-shadow: 5px 5px 5px 5px;
+	margin-top: 2em;
+	margin-bottom: -1em;
 }
 
 .btn-primary{
@@ -26,6 +28,10 @@ body{
 	background-color: black;
 	color: white;
 }
+.panel-footer{
+	background-color: black;
+	color: white;
+}
 a{
 	text-decoration-line: none !important;
 }
@@ -37,4 +43,8 @@ nav{
 }
 .modal{
 	opacity: 0 ; 
+}
+.activo{
+	background-color: #1f1f1f !important;
+	color: #FFFFFF; 
 }
