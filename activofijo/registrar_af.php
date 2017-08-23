@@ -20,24 +20,30 @@
                 </div>
                 <div class="panel-body" id="formulario">
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-1">
                             Cantidad
                         </div>
-                        <div class="col-md-6">
-                            Descripcion del Activo Fijo
+                        <div class="col-md-5">
+                            Descripción del Activo Fijo
                         </div>
                         <div class="col-md-2">
-                            Codigo
+                            Código
                         </div>
                         <div class="col-md-2">
                             No. de Serie
                         </div>
+                        <div class="col-md-2">
+                           Precio
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-2">
+                        <div class="col-md-1">
                             <input class="form-control activo" type="text"/>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-5">
+                            <input class="form-control activo" type="text"/>
+                        </div>
+                        <div class="col-md-2">
                             <input class="form-control activo" type="text"/>
                         </div>
                         <div class="col-md-2">
@@ -77,14 +83,12 @@
         	<div class="panel">
         		<div class="panel-heading">Origen</div>
         		<div class="panel-body">
-        		<input type="radio" id="origen1" class="with-gap"  name="origen">
-        		<label for="origen1">Prestado</label><br>
+        		
         		<input type="radio" id="origen2" class="with-gap"  name="origen">
         		<label for="origen2">Comprado</label><br>
         		<input type="radio" id="origen3" class=" with-gap"  name="origen">
         		<label for="origen3">Donado</label><br>
-        		<input type="radio" id="origen4" class="with-gap"  name="origen">
-        		<label for="origen4">Robado</label>
+        		
         		
         		</div>
         	</div>
@@ -96,7 +100,7 @@
 <script>
 		function addFila(){
 			var script=document.createElement("div");
- 			script.innerHTML="<div class='row'><div class='col-md-2'><input class='form-control activo' type='text'/></div><div class='col-md-6'><input class='form-control activo' type='text'/></div><div class='col-md-2'><input class='form-control activo' type='text'/></div><div class='col-md-2'><input class='form-control activo' type='text'/></div></div>";
+ 			script.innerHTML="<div class='row'><div class='col-md-1'><input class='form-control activo' type='text'/></div><div class='col-md-5'><input class='form-control activo' type='text'/></div><div class='col-md-2'><input class='form-control activo' type='text'/></div><div class='col-md-2'><input class='form-control activo' type='text'/></div><div class='col-md-2'><input class='form-control activo' type='text'/></div></div>";
  			var fila=document.getElementById("formulario");
  			fila.appendChild(script);
  		}

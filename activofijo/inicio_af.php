@@ -94,15 +94,16 @@
             <div class="nav-content" name="">
                 <ul class="tabs tabs-transparent">
                     <li class="tab">
-                        <a href="#test1">
-                            Registro de Activo Fijo
-                        </a>
-                    </li>
-                    <li class="tab">
                         <a class="active" href="#test2">
                             Inventario
                         </a>
                     </li>
+                    <li class="tab">
+                        <a href="#test1">
+                            Registro de Activo Fijo
+                        </a>
+                    </li>
+                    
                     
                     <li class="tab">
                         <a href="#test3">
