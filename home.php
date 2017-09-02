@@ -6,6 +6,7 @@
                 <title>
                     Inicio
                 </title>
+                 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                 <link href="css/bootstrap.min.css" rel="stylesheet">
                     <link href="css/materialize.min.css" rel="stylesheet">
                     </link>
@@ -19,7 +20,7 @@
         <nav class="nav-extended">
             <div class="nav-wrapper">
                 <a class="brand-logo" href="#">
-                    Logo
+                 <img src="imagenes/logo.png" alt="" width="150px">
                 </a>
                 <a class="button-collapse" data-activates="mobile-demo" href="#">
                     <i class="material-icons">
@@ -33,7 +34,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="biblioteca/inicio_b.php">
                             Gestión de Biblioteca
                         </a>
                     </li>

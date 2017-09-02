@@ -1,5 +1,5 @@
 body{
-	background-color: black;
+	background-color: white;
 }
 .login{
 	padding-top: 7em;
@@ -12,7 +12,7 @@ body{
 .panel{
 	box-shadow: 5px 5px 5px 5px;
 	margin-top: 2em;
-	margin-bottom: -1em;
+	margin-bottom: 2em;
 }
 
 .btn-primary{
@@ -25,15 +25,16 @@ body{
 	color: white !important;
 }
 .panel-body{
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 .panel-footer{
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 a{
 	text-decoration-line: none !important;
+	color: white;
 }
 a:hover{
 	color:white;
@@ -45,6 +46,28 @@ nav{
 	opacity: 0 ; 
 }
 .activo{
-	background-color: #1f1f1f !important;
-	color: #FFFFFF; 
+	background-color: #9F9D9D !important;
+	color: #040404; 
+}
+.buscar{
+	background-color: white !important;
+	color: black;  
+}
+.btn-buscar{
+	color: white !important;
+	background-color: #00BC00;  
+}
+label{
+	color: black; 	
+}
+.datepicker{
+	color: black;
+}
+#foto{
+	height: 100px;
+	background-color: red !important;
+}
+.btn_nuevo{
+	color: white !important;
+	background-color: #00D4D7 !important;  
 }

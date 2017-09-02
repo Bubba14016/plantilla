@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-10">
     <div class="row">
         	<div class="panel">
         		<div class="panel-body">
@@ -44,7 +44,9 @@
                             <input class="form-control activo" type="text"/>
                         </div>
                         <div class="col-md-2">
-                            <input class="form-control activo" type="text"/>
+                           <select class="browser-default activo"><option value="0" selected>Seleccione una opcion</option></select>
+                         
+
                         </div>
                         <div class="col-md-2">
                             <input class="form-control activo" type="text"/>
@@ -55,7 +57,7 @@
                     </div>
                 </div>
                 <div class="panel-footer text-right">
-                    <button class="btn btn-default btn-lg " type="button" onclick="addFila()">
+                    <button class="btn btn-default btn-xs " type="button" onclick="addFila()">
                         <span aria-hidden="true" class="glyphicon glyphicon-plus">
                         </span>
                         
@@ -65,18 +67,13 @@
           
         </div>
         </div>
-        <div class="col-md-4">
-        <div class="row">
-        	<div class="panel">
-        		<div class="panel-heading">Ficha No.</div>
-        		<div class="panel-body"><input type="text" class="activo"></div>
-        	</div>
-        </div>
+        <div class="col-md-2">
+        
 
         <div class="row">
         	<div class="panel">
         		<div class="panel-heading">Fecha</div>
-        		<div class="panel-body"><input type="date" class="datepicker activo"></div>
+        		<div class="panel-body"><input type="date" class="datepicker activo" value="<?php echo date('d-m-Y'); ?>"></div>
         	</div>
         </div>
         <div class="row">

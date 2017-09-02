@@ -4,7 +4,7 @@
         <meta charset="utf-8">
             <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
                 <title>
-                    Activo Fijo
+                    Gestion de Biblioteca
                 </title>
                  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
                 <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -15,9 +15,7 @@
                 </link>
             </meta>
         </meta>
-         <script crossorigin="a
-    nonymous" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" src="https://code.jquery.com/jquery-2.2.4.min.js">
-        </script>
+        
     </head>
 <body>
 	 <nav class="nav-extended">
@@ -32,12 +30,12 @@
                 </a>
                 <ul class="right hide-on-med-and-down" id="nav-mobile">
                     <li>
-                        <a href="inicio_af.php">
+                        <a href="../activofijo/inicio_af.php">
                             Activo Fijo
                         </a>
                     </li>
                     <li>
-                        <a href="../biblioteca/inicio_b.php">
+                        <a href="inicio_b.php">
                             Gestión de Biblioteca
                         </a>
                     </li>
@@ -64,12 +62,12 @@
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li>
-                        <a href="inicio_af.php">
+                        <a href="../activofijo/inicio_af.php">
                             Activo Fijo
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="inicio_b.php">
                             Gestión de Biblioteca
                         </a>
                     </li>
@@ -98,24 +96,19 @@
             <div class="nav-content" name="">
                 <ul class="tabs tabs-transparent">
                     <li class="tab">
-                        <a class="active" href="#test2">
-                            Inventario
+                        <a  href="#test2">
+                           Registro
                         </a>
                     </li>
                     <li class="tab">
                         <a href="#test1">
-                            Registro de Activo Fijo
+                           Bibliografia
                         </a>
                     </li>
                     
                     
                     <li class="tab">
-                        <a href="#test3">
-                            Mantenimiento
-                        </a>
-                    </li>
-                    <li class="tab">
-                        <a href="#test4">
+                        <a class="active" href="#test3">
                             Prestamo
                         </a>
                     </li>
@@ -135,17 +128,15 @@
 
         <div class="col s12" id="test1">
            
-           <?php include('registrar_af2.php');?>
+           <h1>Bibliografia</h1>
         </div>
         <div class="col s12" id="test2">
-           <h1>Inventario</h1>
+           <h1>Registros</h1>
         </div>
         <div class="col s12" id="test3">
-           <h1>Mantenimiento</h1>
+            <?php include('listado_p_b.php');?>
         </div>
-        <div class="col s12" id="test4">
-           <h1>prestamos</h1>
-        </div>
+        
         <div class="col s12" id="test5">
             <h1>Consultas</h1>
         </div>
@@ -165,13 +156,13 @@
   	 $(document).ready(function(){
  
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal({
-      dismissible: false, // Modal can be dismissed by clicking outside of the modal
-      opacity: .8, // Opacity of modal background
+      $('.modal').modal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
       inDuration: 300, // Transition in duration
       outDuration: 200, // Transition out duration
-      startingTop: '4%', // Starting top style attribute
-      endingTop: '10%' // Ending top style attribute
+      startingTop: '50%', // Starting top style attribute
+      endingTop: '5%', // Ending top style attribute
      
     }
   );
@@ -185,15 +176,16 @@
      max: new Date(),
     closeOnSelect: true // Close upon selecting a date,
   });
-     document.getElementById('entrada').val=new Date();
-     $("#entrada").val(new Date().getDate()+"/"+(new Date().getgetMonth()+1)+"/"+new Date().getFullYear());
-     $(document).ready(function() {
+    
+     
     $('select').material_select();
-  });
+ 
   });
  		
  	
-
+function abrirModal(){
+        $('#nuevo').modal('open');
+    }
   </script>
 </body>
 </html>
