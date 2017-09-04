@@ -10,8 +10,10 @@
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/materialize.min.css" rel="stylesheet">
         <link href="../css/estilos.css" rel="stylesheet">
+        <link href="../css/foto.css" rel="stylesheet">
+        
+       
 
-        </meta>
-        </meta>
+        
     </head>
     <body>

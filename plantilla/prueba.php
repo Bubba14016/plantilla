@@ -6,6 +6,7 @@ include_once '../plantilla/navbar.php';
 <style>
           .thumb {
             height: 300px;
+            height: 100px;
             border: 1px solid #000;
             margin: 10px 5px 0 0;
           }
